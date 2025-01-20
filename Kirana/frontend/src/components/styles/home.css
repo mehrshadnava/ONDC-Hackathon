@@ -1,0 +1,201 @@
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0; /* Adjust the bottom margin of the hero section */
+    padding-bottom: 0; /* Ensure height adjusts to content */
+  }
+  
+
+.hero-background {
+    height: 350px;
+    background-color: #FF9900;
+    width: 100%;
+    padding: 0;
+    margin-top: -56px;
+  }
+
+  .hero-text {
+    position: absolute; 
+    top: 48%; /* Vertically center */
+    left: 4%; /* Align text to the left side with some padding */
+    transform: translateY(-50%); /* Center text vertically without affecting the horizontal alignment */
+    text-align: left; /* Align text to the left */
+    color: #fff; /* White text color */
+    text-align: left;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem; /* Adjust heading size */
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+  }
+
+  .hero-text p {
+    font-size: 1.2rem; /* Adjust paragraph size */
+    margin: 0;
+  }
+
+  .hero-image-link {
+    position: absolute; /* Position image relative to hero-background */
+    top: 48%; /* Vertically center */
+    right: -2%; /* Align image to the right with padding */
+    transform: translateY(-50%); /* Center image vertically */
+  }
+  
+  .hero-image {
+    height: 320px; /* Adjust image size */
+    width: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Add pointer cursor for better UX */
+  }
+
+  @media (max-width: 768px) {
+    .hero-image {
+      display: none; /* Hide the hero image on small screens */
+    }
+    .hero-section {
+        align-items: center; /* Center the hero text on small screens */
+        text-align: center;  /* Ensure the text is center-aligned */
+      }
+    .hero-text {
+        text-align: center; /* Center-align the text inside the container */
+        font-size: 1.5rem;  /* Adjust the font size for better readability */
+      }
+  }
+
+  .hero-image:hover {
+    transform: scale(1.05); /* Slight scaling effect on hover */
+  }
+  
+  .categories-section {
+    margin-top: 0; /* Adjust the top margin of the category section */
+    padding-top: 0;
+    text-align: center; /* Center the title and content */
+    padding: 40px 20px; /* Add spacing inside the section */
+    background: #fffbe6;  /* Add spacing around the section */
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px; /* Add space below the title */
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #ff9900;
+  }
+  
+  .categories-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: center; /* Center-align items horizontally */
+    gap: 20px; /* Add spacing between items */
+  }
+  
+  .category-item {
+    flex: 0 0 18%; /* Ensure 5 items per row (18% width each) */
+    max-width: 18%; /* Limit the max width to maintain layout */
+    text-align: center;
+  }
+  
+  .category-card {
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05); /* Slight scaling effect on hover */
+  }
+  
+  .category-image {
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid #FF9900; /* Optional: Add a border */
+    object-fit: cover; /* Ensures the image fits within the circular frame */
+    margin-bottom: 10px;
+  }
+  
+  .category-link {
+    text-decoration: none; /* Removes underline */
+  }
+  
+  .category-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+  }
+
+
+  @media (max-width: 992px) {
+    .categories-grid .category-item {
+      flex: 0 0 10%; /* 4 categories per row for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .categories-grid .category-item {
+      flex: 0 0 25%; /* 3 categories per row for small screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .categories-grid .category-item {
+      flex: 0 0 33.33%; /* 2 categories per row for extra-small screens */
+    }
+  }
+  
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px 0;
+    padding: 0 50px;
+  }
+  
+  .info-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 12px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .info-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #232f3e;
+    margin: 15px 0 10px;
+  }
+  
+  .info-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .info-card a {
+    text-decoration: none;
+    color: #ff9900;
+    font-weight: bold;
+  }
+  
+  .info-card a:hover {
+    color: black;
+  }
+  
+  .info-icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  
