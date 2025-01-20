@@ -107,8 +107,9 @@ const Home = () => {
           </div>
           <h3>Step-by-step registration guide</h3>
           <p>A detailed walk-through of the new seller account creation process</p>
-          <a href="#registration-guide">How to Register as a Seller →</a>
+          <a href="/registration-guide">How to Register as a Seller →</a>
         </div>
+
         <div className="info-card">
           <div className="info-icon">
             <img src={beginnerIcon} alt="Beginner's Guide" />
