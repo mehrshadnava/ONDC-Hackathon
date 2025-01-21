@@ -29,21 +29,30 @@ const categories = [
 
 const Home = () => {
   useEffect(() => {
-    // Load the Google Translate script dynamically
-    const googleTranslateScript = document.createElement('script');
-    googleTranslateScript.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    googleTranslateScript.async = true;
-    document.body.appendChild(googleTranslateScript);
+    if (!document.querySelector('script[src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"]')) {
+      const googleTranslateScript = document.createElement('script');
+      googleTranslateScript.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      googleTranslateScript.async = true;
+      document.body.appendChild(googleTranslateScript);
 
-    window.googleTranslateElementInit = () => {
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: 'en',
-          includedLanguages: 'hi,mr', // Hindi (hi), Marathi (mr)
-          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-        },
-        'google_translate_element'
-      );
+      window.googleTranslateElementInit = () => {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: 'hi,mr', // Hindi and Marathi
+            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          'google_translate_element'
+        );
+      };
+    }
+
+    return () => {
+      delete window.googleTranslateElementInit;
+      const googleTranslateScript = document.querySelector('script[src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"]');
+      if (googleTranslateScript) {
+        googleTranslateScript.remove();
+      }
     };
   }, []);
 
@@ -62,11 +71,7 @@ const Home = () => {
               <p>Your one-stop solution for all grocery needs</p>
             </div>
             <a href="/selling" className="hero-image-link">
-              <img
-                src={hero}
-                alt="Start Selling"
-                className="hero-image"
-              />
+              <img src={hero} alt="Start Selling" className="hero-image" />
             </a>
           </Col>
         </Row>
@@ -91,7 +96,7 @@ const Home = () => {
       </section>
       {/* ============ Categories Section End =========== */}
 
-      {/* ============ Card Section Starts =========== */}
+      {/* ============ Card Section Start =========== */}
       <div className="info-section">
         <div className="info-card">
           <div className="info-icon">
@@ -109,7 +114,6 @@ const Home = () => {
           <p>A detailed walk-through of the new seller account creation process</p>
           <a href="/registration-guide">How to Register as a Seller →</a>
         </div>
-
         <div className="info-card">
           <div className="info-icon">
             <img src={beginnerIcon} alt="Beginner's Guide" />

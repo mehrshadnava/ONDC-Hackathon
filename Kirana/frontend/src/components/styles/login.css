@@ -1,0 +1,111 @@
+/* login.css */
+
+/* General container styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fffbe6; /* Match the background color from home.css */
+    padding: 20px;
+  }
+  
+  /* Card styles */
+  .login-card {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Title styles */
+  .login-card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #232f3e;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styles */
+  .input-field {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #ff9900;
+    box-shadow: 0 0 4px rgba(255, 153, 0, 0.5);
+  }
+  
+  /* Button styles */
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button,
+  .send-otp-button,
+  .verify-otp-button {
+    background-color: #ff9900;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover,
+  .send-otp-button:hover,
+  .verify-otp-button:hover {
+    background-color: #cc7a00;
+  }
+  
+  .toggle-button {
+    background-color: transparent;
+    color: #ff9900;
+    font-size: 14px;
+    margin-top: 20px;
+    text-decoration: underline;
+  }
+  
+  .toggle-button:hover {
+    color: #cc7a00;
+  }
+  
+  /* OTP Login Specific Styles */
+  .otp-login {
+    margin-top: 10px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .login-card {
+      padding: 30px 20px;
+    }
+  
+    .login-card h2 {
+      font-size: 1.8rem;
+    }
+  
+    .input-field {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  
