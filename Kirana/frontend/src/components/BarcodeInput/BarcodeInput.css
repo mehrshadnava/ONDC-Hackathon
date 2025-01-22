@@ -1,0 +1,52 @@
+body {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #FFF7E6;
+}
+input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #FFA500; /* Orange border on focus */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FFA500; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF7F00; /* Darker shade on hover */
+}
+
+h3 {
+  color: #333;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555; /* Light gray text for labels */
+}
+
+p {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
+

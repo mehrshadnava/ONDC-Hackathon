@@ -82,7 +82,7 @@ const nav__links = [
                         <Link to='/login'>Login</Link>
                       </Button>
                       <Button className="btn primary__btn">
-                        <Link to='/selling'>Start selling</Link>
+                        <Link to='/ProductList'>Start selling</Link>
                       </Button>
                     </>
                   )

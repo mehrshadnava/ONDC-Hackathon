@@ -3,6 +3,8 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import RegistrationGuide from '../pages/RegistrationGuide';
+import ProductList from '../ProductList/ProductList';
+import BarcodeInput from '../BarcodeInput/BarcodeInput';
 
 const Routers = () => {
   return (
@@ -11,6 +13,12 @@ const Routers = () => {
       <Route path="/home" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/registration-guide" element={<RegistrationGuide />} />
+      <Route path="/productlist" element={
+  <>
+    <BarcodeInput />
+    <ProductList />
+  </>
+}/>
     </Routes>
   );
 };

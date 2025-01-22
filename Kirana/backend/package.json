@@ -124,7 +124,6 @@
     "whatwg-url": "^14.1.0",
     "xmlbuilder": "^13.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"

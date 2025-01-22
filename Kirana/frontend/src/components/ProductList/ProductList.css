@@ -1,0 +1,313 @@
+.product-list-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #FFF7E6;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #FFF7E6;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-images {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-image {
+  max-width: 100px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF7F00;
+}
+
+h3 {
+  color: #333;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+p {
+  color: black;
+  font-size: 14px;
+}
+
+p strong {
+  color: orange;
+}.product-list-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #FFF7E6;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 15px; /* Space between the cards */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #FFF7E6;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.product-images {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-image {
+  max-width: 100px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF7F00;
+}
+
+h3 {
+  color: #333;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+p {
+  color: black;
+  font-size: 14px;
+}
+
+p strong {
+  color: orange;
+}
+
+.delete-button {
+  padding: 8px 15px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.product-list-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #FFF7E6;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 15px; /* Space between the product cards */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #FFF7E6;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-images {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-image {
+  max-width: 100px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF7F00;
+}
+
+.edit-button {
+  padding: 8px 15px;
+  background-color: #00b3b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.edit-button:hover {
+  background-color: #008080;
+}
+
+.delete-button {
+  padding: 8px 15px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.delete-button:hover {
+  background-color: #ff3333;
+}
+
+h3 {
+  color: #333;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+p {
+  color: black;
+  font-size: 14px;
+}
+
+p strong {
+  color: orange;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+  margin-bottom: 10px;
+}
+
+button.edit-button, button.delete-button {
+  margin-right: 10px;
+}
+
+.delete-button:hover {
+  background-color: #ff3333;
+}
